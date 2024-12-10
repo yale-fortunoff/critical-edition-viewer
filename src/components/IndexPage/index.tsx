@@ -32,7 +32,7 @@ export default function IndexPage() {
   const { essays, projectData } = context;
   const { title: projectTitle } = projectData;
 
-  const backgroundImageURL = '/img/impact-header-background.jpg';
+  const backgroundImageURL = '/img/impact-header-background.webp';
 
   const pageTitle = `${projectTitle} ${
     projectData.organizationName ? ` | ${projectData.organizationName}` : ''
