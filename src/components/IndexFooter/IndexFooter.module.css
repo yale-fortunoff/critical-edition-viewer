@@ -1,0 +1,90 @@
+.footer {
+  margin-top: 7.5rem;
+  padding: 0 1rem;
+  background-color: white;
+  color: #242424;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  border-top: 2px solid #efefef;
+}
+
+.logoSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+}
+
+.parentLogo {
+  height: 4.375rem;
+  width: auto;
+  margin-right: 1.875rem;
+}
+
+.orgLogo {
+  height: 2.5rem;
+  width: auto;
+  filter: invert(1);
+}
+
+.dhlab {
+  font-size: 0.8125rem;
+  max-width: 25rem;
+  line-height: 1.5;
+}
+
+.dhlab a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.acknowledgementWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.acknowledgements {
+  height: 13.125rem;
+  width: auto;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .logoSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logoGroup {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .parentLogo {
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .orgLogo {
+    margin-bottom: 1.25rem;
+  }
+
+  .acknowledgements {
+    height: 10rem;
+  }
+}

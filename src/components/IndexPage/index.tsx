@@ -6,6 +6,7 @@ import EssayIndexItem from '../EssayIndexItem';
 import LogoBar from '../Viewer/LogoBar';
 import ImpactHeader from './ImpactHeader';
 import styles from './IndexPage.module.css';
+import IndexFooter from 'components/IndexFooter';
 
 // const logger = new DebugLogger("IndexPage: ");
 
@@ -36,7 +37,7 @@ export default function IndexPage() {
 
   const pageTitle = `${projectTitle} ${
     projectData.organizationName ? ` | ${projectData.organizationName}` : ''
-  }`;
+    }`;
 
   return (
     <div>
@@ -57,7 +58,7 @@ export default function IndexPage() {
           <ul
             className={`${styles.ItemListContainer} ${
               projectData.textOnlyIndexPage ? styles.TextOnly : null
-            }`}
+              }`}
           >
             {essays.map((essay) => {
               // const essay: EssayDataEntry = essays[essayID];
@@ -79,6 +80,7 @@ export default function IndexPage() {
           </ul>
         </nav>
       </main>
+      <IndexFooter />
     </div>
   );
 }
